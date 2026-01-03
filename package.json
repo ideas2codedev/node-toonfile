@@ -1,0 +1,72 @@
+{
+  "name": "toonfile",
+  "version": "1.0.0",
+  "description": "Easily read/write TOON files. Like jsonfile, but for TOON format.",
+  "keywords": [
+    "toon",
+    "toon-format",
+    "file",
+    "read",
+    "write",
+    "fs",
+    "llm",
+    "token-efficient",
+    "json",
+    "parser",
+    "serializer",
+    "config",
+    "configuration",
+    "data"
+  ],
+  "author": {
+    "name": "ideas2code",
+    "url": "https://www.npmjs.com/~ideas2code"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ideas2codedev/node-toonfile#readme",
+  "bugs": {
+    "url": "https://github.com/ideas2codedev/node-toonfile/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ideas2codedev/node-toonfile.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "src/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "lint": "standard",
+    "test": "npm run build && npm run unit",
+    "unit": "mocha",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "universalify": "^2.0.0"
+  },
+  "optionalDependencies": {
+    "graceful-fs": "^4.1.6"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.0.3",
+    "mocha": "^10.0.0",
+    "rimraf": "^5.0.0",
+    "standard": "^17.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+# Test files
+test/
+*.test.js
+*.test.ts
+
+# Source files (TypeScript sources are included via package.json "files")
+# but we want to exclude examples and development files
+example.js
+example-ts.ts
+utils.js
+index.js
+
+# Development
+.editorconfig
+.eslintrc.json
+tsconfig.json
+.github/
+.git/
+.gitignore
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+appveyor.yml
+
+# Documentation (keep README.md, LICENSE, CHANGELOG.md)
+CONTRIBUTING.md
+docs/
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build artifacts (dist/ is included via package.json "files")
+coverage/
+.nyc_output/

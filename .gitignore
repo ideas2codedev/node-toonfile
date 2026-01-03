@@ -1,3 +1,12 @@
+# Internal documentation (not for repo)
+PUBLISHING.md
+
+# Example/dev files (not for repo)
+example.js
+example-ts.ts
+index.js
+utils.js
+
 # Logs
 logs
 *.log
